@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --base-font-size: 1em;
+    --base-font-family: 'Crimson Pro', sans-serif;
+    font-size: 1em;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: var(--base-font-family);
+    font-size: 1rem;
+    color: #3f3844;
+    height: 100vh;
+    background: white;
+    background-image: radial-gradient(#F0F0F0 1px, transparent 0);
+    background-size: 20px 20px;
+    line-height: 1.4;                            1
+    letter-spacing: 0.01em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    color: #000;
+}
+
+header h1 {
+    font-size: 2.25rem;
+}
+
+header img {
+    height: 45px;
+    margin-bottom: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 650px;
+    margin: 0 auto;
+}
+
+.course-wrapper {
+   display: flex;
+   flex-direction: column;
+}
+
+.course-wrapper > div {
+    text-align: center;
+    padding: 15px;
+    margin: 5px;
+    background: #f8f8f8;
+    border: 1px solid #f0f0f0;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+}
+
+.social-icon {
+    display: inline-flex;
+    padding: 12px;
+}
+
+.social-icon img {
+    height: 22px;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+
+    .course-wrapper > div {
+        padding: 12px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+}
