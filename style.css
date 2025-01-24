@@ -2,6 +2,119 @@
     box-sizing: border-box;
 }
 
+{
+    padding: 0;
+    margin: 0;
+     box-sizing: border-box;
+}
+body
+{
+    background-image: url(Background%20Bce.jpeg);
+    background-size: cover;
+    background-position: center;
+   
+    font-family: sans-serif;
+}
+
+.menu-bar ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: #000;
+}
+.menu-bar
+{
+    background: rgb(240,240,240);
+    text-align: right;
+}
+
+.menu-bar ul li
+{
+    width: 120px;
+    margin: 20px;
+    padding: 12px;
+}
+.menu-bar ul li a
+{
+    text-decoration: none;
+    color: #aaa;
+}
+.active, .menu-bar ul li:hover
+{
+   background: #f9f9f9;
+    border-radius: 3px;
+}
+.menu-bar .fa
+{
+    margin-right: 8px;  
+}
+.sub-menu-1
+{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    background: rgb(230,230,230);
+    margin-top: 15px;
+    margin-left: -10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+    display: block;
+    margin: 2px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+   width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left; 
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+    color: #a9a9a9;
+}
+.fa-angle-right
+{
+    float: right;
+}
+.sub-menu-2
+{
+    display: none;
+}
+.hover-me:hover .sub-menu-2
+{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background: rgb(220,220,220);
+}
+.logo{
+  width: 250px;
+    height: 80px;
+    border-radius: 0%;
+    position: absolute;
+    top: 20px;
+    left: calc(1% - 1px);
+}
+
+
+
+
+
+
+
+
+
 :root {
     --base-font-size: 1em;
     --base-font-family: 'Crimson Pro', sans-serif;
@@ -41,28 +154,6 @@ header img {
     margin-bottom: 10px;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 100%;
-    width: 650px;
-    margin: 0 auto;
-}
-
-.course-wrapper {
-   display: flex;
-   flex-direction: column;
-}
-
-.course-wrapper > div {
-    text-align: center;
-    padding: 15px;
-    margin: 5px;
-    background: #f8f8f8;
-    border: 1px solid #f0f0f0;
-    border-radius: 10px;
-}
 
 footer {
     text-align: center;
