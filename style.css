@@ -9,8 +9,8 @@
 
 background img{
   border: 1px solid black;
-  padding: 50px;
-  background: icon(background Bce.jpeg);
+  padding: 1024px;
+  background: (background Bce.Jpeg);
   background-repeat: no-repeat;
   background-size: auto;
 }
